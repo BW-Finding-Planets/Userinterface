@@ -1,0 +1,20 @@
+// Mixins in here
+
+// Parametric Mixin
+.custom-btn(@bgcolor, @font-color, @br, @fs) {
+  color: @font-color;
+  background-color: @bgcolor;
+  border-radius: @br;
+  font-size: @fs;
+  width: 200px;
+  height: 50px;
+
+  &:hover {
+    background-color: @font-color;
+    color: @bgcolor;
+  }
+}
+.signup {
+  .custom-btn(#008080, white, 10px, 2rem);
+
+}
