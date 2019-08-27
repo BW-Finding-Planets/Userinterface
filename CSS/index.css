@@ -224,17 +224,11 @@ img {
 .nav-container nav .first-anchor {
   margin-left: 0;
 }
-.nav-container .container {
-  background-color: #191970;
-}
 .home-container {
   height: 100vh;
   width: 100vw;
   align-items: center;
-  background-image: url("../../images/main-img.jpg");
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
+  background-image: url("../../images/main-img2.jpg");
   display: flex;
   padding: 6em 0 2em 0 ;
   background-attachment: fixed;
@@ -272,7 +266,7 @@ img {
 .home-container .divider .line {
   flex-grow: 1;
   background-color: #FDFDFD;
-  width: 3px;
+  width: 7px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -284,4 +278,25 @@ h2 {
   font-size: 60px;
   font-weight: bold;
   margin: 0 0 25px;
+}
+.our-team {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.our-team-section {
+  width: 80%;
+  height: 90%;
+  background-color: lightgrey;
+  margin: 0 0 0 200px;
+}
+hr {
+  border: 0;
+  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+  margin: 2em 0;
+}
+hr.major {
+  margin: 3em 0;
 }
