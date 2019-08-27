@@ -1,13 +1,18 @@
-.signup {
-  color: white;
-  background-color: #008080;
-  border-radius: 10px;
-  font-size: 2rem;
-  width: 200px;
-  height: 50px;
+#custom {
+  background-color: transparent;
+  color: #fff;
 }
-.signup:hover {
-  background-color: white;
+.big-btn {
+  color: black;
+  background-color: none;
+  border: thin solid #fff;
+  font-size: 1.6rem;
+  width: 300px;
+  height: 40px;
+  margin: 20px auto 12px;
+}
+.big-btn:hover {
+  background-color: black;
   color: #008080;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -144,16 +149,12 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
-}
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Playfair Display', serif;
 }
 h1 {
   font-size: 4rem;
@@ -161,6 +162,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  color: #FFFAFA;
 }
 h4 {
   font-size: 2.5rem;
@@ -175,20 +177,24 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 800px;
+.main-container {
+  max-width: 100%;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 .nav-container {
   margin: 0 auto;
   padding: 20px 0;
-  margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
 .nav-container h1 {
   font-size: 3.5rem;
+  margin-left: 65px;
+  color: white;
 }
 @media ( max-width: 800px) {
   .nav-container {
@@ -199,12 +205,14 @@ img {
 }
 .nav-container nav {
   margin-left: 62px;
+  margin-right: 140px;
+  margin-top: 12px;
 }
 .nav-container nav a {
   margin-left: 20px;
   font-size: 2rem;
   text-decoration: none;
-  color: grey;
+  color: white;
   font-weight: bold;
 }
 @media ( max-width: 800px) {
@@ -215,4 +223,65 @@ img {
 }
 .nav-container nav .first-anchor {
   margin-left: 0;
+}
+.nav-container .container {
+  background-color: #191970;
+}
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-image: url("../../images/main-img.jpg");
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 6em 0 2em 0 ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0 !important;
+  cursor: default;
+  flex-direction: row;
+}
+@media ( max-width: 800px) {
+  .home-container {
+    flex-direction: column;
+  }
+}
+.home-container .box {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.home-container .divider {
+  min-height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.home-container .divider img {
+  margin-top: 5vh;
+}
+.home-container .divider .line {
+  flex-grow: 1;
+  background-color: #FDFDFD;
+  width: 3px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.text-content {
+  color: white;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 0 25px;
 }
