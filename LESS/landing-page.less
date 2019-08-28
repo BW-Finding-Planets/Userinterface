@@ -1,4 +1,5 @@
 
+// Landing Page Styles
 .home-container {
     height:100vh;
     width: 100vw;
@@ -14,8 +15,12 @@
 		cursor: default;
     flex-direction: row;
     @media @phone {
-      flex-direction: column;
+    flex-direction: column;
     }
+  }// this closes home container
+   
+
+    // this opens box section
     .box {
       width: 45%;
       display: flex;
@@ -23,7 +28,35 @@
       justify-content: center;
       align-content: center;
       align-items: center;
-    }
+       h2 {
+          font-size: 60px;
+          font-weight: bold;
+          margin: 0 0 25px;
+        }
+
+       @media @phone{
+      }//this closes the box media query
+    
+    .box1{
+
+      @media @phone {
+        h2{
+          color:white;
+        } 
+        #custom{
+          border: 1px solid red;
+        }
+      }// this closes box1
+    
+    .box2{
+      @media @phone {
+        display: none;
+      }
+    }//this closes box2
+  }// This closes the box section
+
+
+    // This opens the divider
     .divider {
       min-height: 100%;
       flex-direction: column;
@@ -31,6 +64,9 @@
       justify-content: center;
       align-content: center;
       align-items: center;
+      @media @phone {
+       display: none;
+      }
     
       img {
         margin-top: 5vh;
@@ -39,12 +75,12 @@
       .line {
         flex-grow: 1;
         background-color: #FDFDFD;
-        width: 7px;
+        width: 5px;
         margin-top: 50px;
         margin-bottom: 100px;
       }
-    }
-  }
+    }// This closes the divider
+  
 
  .text-content {
     color: white;
@@ -52,35 +88,157 @@
   }
 
 
-h2 {
-  font-size: 60px;
-  font-weight: bold;
-  margin: 0 0 25px;
-}
+
+
+
+  //  Team Page Styles
  
 
-.our-team{ 
+.main-team-container{ 
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
   height:100vh;
   width: 100vw;
   display: flex;
+  // flex-wrap: wrap;padding-bottom: 50px;
+  
+    // @media (max-width: 800px) {
+    //   flex-direction: column;
+    //  } 
+  }
+  
+   .team-section {
+    width: 900px;
+    margin: 0 auto;
+    h1{
+      padding-top: 20px;
+      font-size: 3rem;
+      font-family: @raleway;
+      color: white;
+      padding-bottom: 30px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    p{
+      text-align: center;
+    }
+   }
+
+ .team-members {
+    border: 2px solid red;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      width: 100%;
+  }
+}
+ 
+
+    .team {
+      border: 2px solid yellow;
+      background-color: magenta;
+      max-width: 25%;
+      min-width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   
+      
+      img {
+          border-radius: 100px;
+          width: 150px;
+          height: 150px;;
+           
+        }
+      button{
+        background-color: transparent;
+        // display: inline;
+        // max-width: 25%;
+        // display: flex;
+        // flex-direction: row;
+        // width: 200px;
+        // margin: 20px 0 20px 0;
+
+        a {
+          font-size: 2rem;
+          text-decoration: none;
+          color: white;
+          margin-right: 10px;
+        }
+
+        img{
+          width: 35px;
+          height: 30px;
+          // width: 20%;
+          // height: 20%;
+        }
+
+      
+      }
+
+      
+        
+    }
+  
+.team h3{
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 
-.our-team-section{
-  width: 80%;
-  height: 90%;
-  background-color: lightgrey;
-  margin: 0 0 0 200px;
-}
+// .team-members 
+
+
+
+// .team-members button{
+//   background-color: transparent;
+//   width: 200px;
+//   margin: 20px 0 20px 0;
+  
+// }
+
+
+// .team-members button a {
+//   font-size: 2rem;
+//   text-decoration: none;
+//   color: white;
+//   margin-right: 10px;
+// }
+
+
+
+// .team-members button img{
+//   width: 35px;
+//   height: 30px;
+// }
+
 
 hr {
   border: 0;
-  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+  // border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+  border-bottom: solid 1px white;
   margin: 2em 0;
 }
 
-  hr.major {
-    margin: 3em 0;
+
+
+
+
+// Footer
+
+
+  footer{
+    background-color: lightcoral;
+    height: 300px;
+  }
+
+  footer p{
+    text-align: center;
   }

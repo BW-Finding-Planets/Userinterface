@@ -1,14 +1,20 @@
 // Navigation Styles here
 
+
 .nav-container {
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-  ;
+ 
+  @media @phone {	
+    flex-direction: column;
+      align-items: center;
+      // margin-bottom: 20px;
+  
+    } //this closes header media query
 
   h1 {
     font-size: 3.5rem;
@@ -16,14 +22,7 @@
     color: white;
   } // h1
 
-  @media @phone {	
-    flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-  
-    } //this closes header media query
-
-  nav {
+ nav {
     margin-left: 62px;
     margin-right: 140px;
     margin-top: 12px;
@@ -31,9 +30,9 @@
       margin-left: 20px;
       font-size: 2rem;
       text-decoration: none;
-      color: white;
+      color: @Coral;
       font-weight: bold;
-    }
+    }// a
     @media @phone {
         margin: 50px 0px 0px 0px;
         display: flex;
@@ -43,8 +42,8 @@
     .first-anchor {
       margin-left: 0;
     }
- } // nav
-} // header
+ } // this closes nav
+} // this closes nav container
 
 
 
