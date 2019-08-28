@@ -1,256 +1,92 @@
-
 // Landing Page Styles
 .home-container {
-    height:100vh;
-    width: 100vw;
-		align-items: center;
-		background-image: url("../../images/main-img2.jpg");
-		display: flex;
-		padding: 6em 0 2em 0 ;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		border-bottom: 0 !important;
-		cursor: default;
-    flex-direction: row;
-    @media @phone {
-      flex-direction: column;
-    }
-  }// this closes home container
-   
-
-    // this opens box section
-.box {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-
-      h2 {
-        font-size: 5.5rem;
-        padding-bottom: 10px;
-        color:@Snow;
-        font-weight: bold;
-        margin: 0 0 25px;
-        @media @phone{
-          text-align: center;
-          margin-top: 60px;
-        }//this closes the h2 media query
-      }//h2 
-
-
-        .text-content {
-          color: white;
-          font-size:2rem;
-        }
-    
-   .box1 {
-
-      @media @phone {
-        #custom {
-          border: 2px solid grey;
-        }
-      }// this closes box1
-    }
-
-  } // This closes the box section
-  
-  #box2 {
-
-    @media @phone {
-      display: none;
-    }
-  }//this closes box2
-
-
-
-
-    // This opens the divider
-    .divider {
-      min-height: 100%;
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      @media @phone {
-       display: none;
-      }
-    
-      img {
-        margin-top: 5vh;
-      }
-
-      .line {
-        flex-grow: 1;
-        background-color: #FDFDFD;
-        width: 5px;
-        margin-top: 50px;
-        margin-bottom: 100px;
-      }
-    }// This closes the divider
-  
-
-
-
-
-
-  //  Team Page Styles
- 
-
-.main-team-container { 
-  background-color: #7f5a83;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  height: 100vh;
   width: 100vw;
+  align-items: center;
+  background-image: url("../../images/main-img2.jpg");
   display: flex;
+  padding: 6em 0 2em 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0 !important;
+  cursor: default;
+  flex-direction: row;
+  @media @phone {
+    flex-direction: column;
   }
-  
-   .team-section {
-    width: 900px;
-    margin: 0 auto;
-    h1 {
-      padding-top: 20px;
-      font-size: 3rem;
-      font-family: @raleway;
-      color: white;
-      padding-bottom: 30px;
-      text-align: center;
-      margin: 0 auto;
-    }
-    p {
-      text-align: center;
-      color:white;
-    }
-   }
+} // this closes home container
 
- .team-members {
-    background-color: none;
-    display: flex;
-    flex-wrap: wrap; flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
-    @media (max-width: 800px) {
-      flex-direction: column;
-      min-width: 100%;
-      align-content: center;
-    }
-}
- 
-
-.team {
-  
-  // background-color: magenta;
-  max-width: 25%;
-  min-width: 25%;
+// this opens box section
+.box {
+  width: 45%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
-  padding-bottom: 50px;
 
-  @media (max-width: 800px) {
-    min-width: 70%;
-    border-bottom: 1px solid white;
-    padding-top: 20px;
-  }
-  
-  img {
-      border-radius: 100px;
-      width: 150px;
-      height: 150px;;
-        
-    }
-  button{
-    background-color: transparent;
-    a {
-      font-size: 2rem;
-      text-decoration: none;
-      color: white;
-      margin-right: 10px;
-    }
-    
-
-    img{
-      width: 35px;
-      height: 30px;
-    
-    }
-
-  
-  }//this closes button
-}// this closes team section
-
-.team h3{
-    color: white;
-    font-size: 1.6rem;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-
-
-hr {
-  border: 0;
-  // border-bottom: solid 1px rgba(212, 212, 255, 0.1);
-  border-bottom: solid 1px white;
-  margin: 2em 0;
-}
-
-
-
-
-
-// Footer
-footer{
-  background-color: #734ae8;
-  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
-  height: 170px;
-  
-    p{
-      text-align: center;
-      color: @Darknavy;
-      padding-top: 0;
-      @media @phone {
-        margin-top: 40px;
-      }
-    }  
-
-  }
-
-  .footer-icons{
-    // display: flex;
-    visibility: hidden;
+  h2 {
+    font-size: 5.5rem;
+    padding-bottom: 10px;
+    color: lightgray;
+    font-weight: bold;
+    margin: 0 0 25px;
     @media @phone {
-      visibility: visible;
-    }
-    #footer-text{
-       text-align: center;
-        margin-top: 0;
-       font-size: 2rem;
-        
-      
-    }
-    #icons-img{
-      display: flex;
+      text-align: center;
+      margin-top: 60px;
+    } //this closes the h2 media query
+  } //h2
 
-      img{
-        width: 50px;
-        height: 50px;
-        justify-items: center;
-      }
-    }
-
+  .text-content {
+    color: white;
+    font-size: 2rem;
   }
 
-//   @media @phone {
-//     margin: 50px 0px 0px 0px;
-//     display: flex;
-//   } //this closes nav media query
+  .box1 {
+    @media @phone {
+      #custom {
+        border: 2px solid grey;
+      }
+    } // this closes box1
+  }
+} // This closes the box section
 
+#box2 {
+  @media @phone {
+    display: none;
+  }
+} //this closes box2
 
-// .first-anchor {
-//   margin-left: 0;
-// }
+// This opens the divider
+.divider {
+  min-height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  @media @phone {
+    display: none;
+  }
+
+  img {
+    margin-top: 5vh;
+  }
+
+  .line {
+    flex-grow: 1;
+    background-color: #fdfdfd;
+    width: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+} // This closes the divider
+
+.icons img{
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 10px;
+}

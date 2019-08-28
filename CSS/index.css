@@ -1,19 +1,23 @@
-#custom {
-  background-color: transparent;
-  color: #fff;
-}
 .big-btn {
-  color: black;
-  background-color: none;
-  border: thin solid #fff;
-  font-size: 1.6rem;
-  width: 300px;
-  height: 40px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid #FF7F50;
+  font-size: 2rem;
+  width: 310px;
+  height: 65px;
   margin: 20px auto 12px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+@media ( max-width: 800px) {
+  .big-btn {
+    color: #696969;
+    border: 3px solid white;
+  }
 }
 .big-btn:hover {
-  background-color: black;
-  color: #008080;
+  background-color: white;
+  color: #FF7F50;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -225,13 +229,49 @@ img {
 .nav-container nav .first-anchor {
   margin-left: 0;
 }
+footer {
+  background-color: #734ae8;
+  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+  height: 170px;
+}
+footer p {
+  text-align: center;
+  color: #191970;
+  padding-top: 0;
+}
+@media ( max-width: 800px) {
+  footer p {
+    margin-top: 40px;
+  }
+}
+.footer-icons {
+  visibility: hidden;
+}
+@media ( max-width: 800px) {
+  .footer-icons {
+    visibility: visible;
+  }
+}
+.footer-icons #footer-text {
+  text-align: center;
+  margin-top: 0;
+  font-size: 2rem;
+}
+.footer-icons #icons-img {
+  display: flex;
+}
+.footer-icons #icons-img img {
+  width: 50px;
+  height: 50px;
+  justify-items: center;
+}
 .home-container {
   height: 100vh;
   width: 100vw;
   align-items: center;
   background-image: url("../../images/main-img2.jpg");
   display: flex;
-  padding: 6em 0 2em 0 ;
+  padding: 6em 0 2em 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -256,7 +296,7 @@ img {
 .box h2 {
   font-size: 5.5rem;
   padding-bottom: 10px;
-  color: #FFFAFA;
+  color: lightgray;
   font-weight: bold;
   margin: 0 0 25px;
 }
@@ -298,10 +338,16 @@ img {
 }
 .divider .line {
   flex-grow: 1;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   width: 5px;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+.icons img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 .main-team-container {
   background-color: #7f5a83;
@@ -317,14 +363,14 @@ img {
   padding-top: 20px;
   font-size: 3rem;
   font-family: 'Raleway', sans-serif;
-  color: white;
+  color: #FFFAFA;
   padding-bottom: 30px;
   text-align: center;
   margin: 0 auto;
 }
 .team-section p {
   text-align: center;
-  color: white;
+  color: lightgrey;
 }
 .team-members {
   background-color: none;
@@ -365,10 +411,12 @@ img {
   background-color: transparent;
 }
 .team button a {
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-decoration: none;
-  color: white;
-  margin-right: 10px;
+  color: lightgrey;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 10;
 }
 .team button img {
   width: 35px;
@@ -385,40 +433,4 @@ hr {
   border: 0;
   border-bottom: solid 1px white;
   margin: 2em 0;
-}
-footer {
-  background-color: #734ae8;
-  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
-  height: 170px;
-}
-footer p {
-  text-align: center;
-  color: #191970;
-  padding-top: 0;
-}
-@media ( max-width: 800px) {
-  footer p {
-    margin-top: 40px;
-  }
-}
-.footer-icons {
-  visibility: hidden;
-}
-@media ( max-width: 800px) {
-  .footer-icons {
-    visibility: visible;
-  }
-}
-.footer-icons #footer-text {
-  text-align: center;
-  margin-top: 0;
-  font-size: 2rem;
-}
-.footer-icons #icons-img {
-  display: flex;
-}
-.footer-icons #icons-img img {
-  width: 50px;
-  height: 50px;
-  justify-items: center;
 }
