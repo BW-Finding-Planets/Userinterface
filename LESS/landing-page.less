@@ -1,23 +1,11 @@
+
 // Landing Page Styles
+
 .home-container {
   height: 100vh;
   width: 100vw;
   align-items: center;
   background-image: url("../../images/main-img2.jpg");
-  &:before {
-    content: "";
-    position: absolute;
-    top: 78px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    @media @phone, @tablet{
-      display: none;
-    }
-  
-  }
   display: flex;
   padding: 6em 0 2em 0;
   background-attachment: fixed;
@@ -29,8 +17,9 @@
   flex-direction: row;
   @media @phone {
     flex-direction: column;
-  }
+  }// this closes home media
 } // this closes home container
+
 
 // this opens box section
 .box {
@@ -49,14 +38,16 @@
     color: @Snow;
     font-weight: 700;
     margin: 0 0 25px;
-    @media @phone, @tablet  {
+    @media @phone, @tablet{
       text-align: center;
       margin-top: 60px;
     } //this closes the h2 media query
-    p {
-      text-align: center;
-    }
+   
   } //h2
+
+  p {
+    text-align: center;
+  }//p
 
   .text-content {
     color: white;
@@ -64,19 +55,19 @@
     text-align: center;
     width: 90%;
     a {
-      text-decoration-color: @Dimgray;
+      text-decoration-color: white;
       color: white;
-    }
-  }
+    }// a
+  }// this closes text-content
 
-//   .box1 {
-//     @media @phone {
-//       #custom {
-//         border: 2px solid grey;
-//       }
-//     } // this closes box1
-//   }
-// } // This closes the box section
+  .box1 {
+    @media @phone {
+      #custom {
+        border: 2px solid grey;
+      }
+    } // this closes box1
+  }
+} // This closes the box section
 
 #box2 {
   @media @phone {
@@ -98,7 +89,7 @@
 
   img {
     margin-top: 5vh;
-  }
+}
 
   .line {
     flex-grow: 1;
@@ -109,13 +100,14 @@
   }
 } // This closes the divider
 
+
 .icons img {
   width: 60px;
   height: 60px;
   margin-left: 20px;
   margin-top: 10px;
-  @media @tablet{
+  @media @tablet {
     margin-left: 0;
-  }
-}
-}
+  }//this closes icons media
+}//this closes icons img
+
