@@ -1,0 +1,53 @@
+// Navigation Styles here
+
+.nav-container {
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+  @media @phone, @tablet   {
+    flex-direction: column;
+    align-items: center;
+  } //this closes header media query
+
+
+
+  h1 {
+    font-size: 3.5rem;
+    margin-left: 65px;
+    color: white;
+    @media @phone, @tablet {
+      text-align: center;
+      margin: 0;
+    }
+
+  } // h1
+
+  nav {
+    margin-left: 62px;
+    margin-right: 140px;
+    margin-top: 12px;
+    a {
+      margin-left: 20px;
+      font-size: 2rem;
+      text-decoration: none;
+      color: @Snow;
+      font-weight: bold;
+      font-family: @playfair;
+      &:hover {
+        color: #ff00ff;
+      }
+    } // a
+    @media @phone, @tablet {
+      margin: 50px 0px 0px 0px;
+      display: flex;
+    } //this closes nav media query
+
+    .first-anchor {
+      margin-left: 0;
+    }
+  } // this closes nav
+} // this closes nav container

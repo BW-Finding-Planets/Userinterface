@@ -1,0 +1,121 @@
+// Landing Page Styles
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-image: url("../../images/main-img2.jpg");
+  &:before {
+    content: "";
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    @media @phone, @tablet{
+      display: none;
+    }
+  
+  }
+  display: flex;
+  padding: 6em 0 2em 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0 !important;
+  cursor: default;
+  flex-direction: row;
+  @media @phone {
+    flex-direction: column;
+  }
+} // this closes home container
+
+// this opens box section
+.box {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  h2 {
+    font-size: 5.5rem;
+    padding-bottom: 10px;
+    color: @Snow;
+    font-weight: 700;
+    margin: 0 0 25px;
+    @media @phone, @tablet  {
+      text-align: center;
+      margin-top: 60px;
+    } //this closes the h2 media query
+    p {
+      text-align: center;
+    }
+  } //h2
+
+  .text-content {
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 90%;
+    a {
+      text-decoration-color: @Dimgray;
+      color: white;
+    }
+  }
+
+//   .box1 {
+//     @media @phone {
+//       #custom {
+//         border: 2px solid grey;
+//       }
+//     } // this closes box1
+//   }
+// } // This closes the box section
+
+#box2 {
+  @media @phone {
+    display: none;
+  }
+} //this closes box2
+
+// This opens the divider
+.divider {
+  min-height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  @media @phone {
+    display: none;
+  }
+
+  img {
+    margin-top: 5vh;
+  }
+
+  .line {
+    flex-grow: 1;
+    background-color: #fdfdfd;
+    width: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+} // This closes the divider
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 10px;
+  @media @tablet{
+    margin-left: 0;
+  }
+}
+}

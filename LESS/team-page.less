@@ -1,0 +1,98 @@
+//  Team Page Styles
+
+.main-team-container {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  width: 100vw;
+  display: flex;
+}
+
+.team-section {
+  width: 900px;
+  margin: 0 auto;
+  h1 {
+    padding-top: 20px;
+    font-size: 3rem;
+    font-family: @raleway;
+    color: @Snow;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+    color: lightgrey;
+  }
+}
+
+.team-members {
+  background-color: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+  @media @phone {
+    flex-direction: column;
+    min-width: 100%;
+    align-content: center;
+  }
+}
+
+.team {
+  max-width: 25%;
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+
+  @media (max-width: 800px) {
+    min-width: 70%;
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+  }
+
+  img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  button {
+    background-color: lightgrey;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: @magenta;
+    }
+    a {
+      font-size: 1.9rem;
+      text-decoration: none;
+      color: @Darknavy;
+      &:hover {
+        color: white;
+      }
+    }
+
+    img {
+      width: 35px;
+      height: 30px;
+    }
+  } //this closes button
+} // this closes team section
+
+.team h3 {
+  color: white;
+  font-size: 1.6rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  // border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+  border-bottom: solid 1px white;
+  margin: 2em 0;
+}
