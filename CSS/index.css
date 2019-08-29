@@ -9,7 +9,7 @@
   font-weight: bold;
   font-family: 'Playfair Display', serif;
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px) {
   .big-btn {
     color: #696969;
     border: 3px solid white;
@@ -17,7 +17,7 @@
 }
 .big-btn:hover {
   background-color: white;
-  color: #FF6347;
+  color: #ff6347;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -190,7 +190,7 @@ img {
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px), ( max-width: 900px) {
   .nav-container {
     flex-direction: column;
     align-items: center;
@@ -201,7 +201,7 @@ img {
   margin-left: 65px;
   color: white;
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px), ( max-width: 900px) {
   .nav-container h1 {
     text-align: center;
     margin: 0;
@@ -221,9 +221,9 @@ img {
   font-family: 'Playfair Display', serif;
 }
 .nav-container nav a:hover {
-  color: #FF00FF;
+  color: #ff00ff;
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px), ( max-width: 900px) {
   .nav-container nav {
     margin: 50px 0px 0px 0px;
     display: flex;
@@ -242,7 +242,7 @@ footer p {
   color: #191970;
   padding-top: 0;
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px) {
   footer p {
     margin-top: 40px;
   }
@@ -250,7 +250,7 @@ footer p {
 .footer-icons {
   visibility: hidden;
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px) {
   .footer-icons {
     visibility: visible;
   }
@@ -284,7 +284,22 @@ footer p {
   cursor: default;
   flex-direction: row;
 }
-@media ( max-width: 800px) {
+.home-container:before {
+  content: "";
+  position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media ( max-width: 700px), ( max-width: 900px) {
+  .home-container:before {
+    display: none;
+  }
+}
+@media ( max-width: 700px) {
   .home-container {
     flex-direction: column;
   }
@@ -302,11 +317,11 @@ footer p {
 .box h2 {
   font-size: 5.5rem;
   padding-bottom: 10px;
-  color: lightgray;
-  font-weight: bold;
+  color: #FFFAFA;
+  font-weight: 700;
   margin: 0 0 25px;
 }
-@media ( max-width: 800px) {
+@media ( max-width: 700px), ( max-width: 900px) {
   .box h2 {
     text-align: center;
     margin-top: 60px;
@@ -323,19 +338,14 @@ footer p {
 }
 .box .text-content a {
   text-decoration-color: #696969;
-  color: white ;
+  color: white;
 }
-@media ( max-width: 800px) {
-  .box .box1 #custom {
-    border: 2px solid grey;
-  }
-}
-@media ( max-width: 800px) {
-  #box2 {
+@media ( max-width: 700px) {
+  .box #box2 {
     display: none;
   }
 }
-.divider {
+.box .divider {
   min-height: 100%;
   flex-direction: column;
   display: flex;
@@ -343,26 +353,31 @@ footer p {
   align-content: center;
   align-items: center;
 }
-@media ( max-width: 800px) {
-  .divider {
+@media ( max-width: 700px) {
+  .box .divider {
     display: none;
   }
 }
-.divider img {
+.box .divider img {
   margin-top: 5vh;
 }
-.divider .line {
+.box .divider .line {
   flex-grow: 1;
   background-color: #fdfdfd;
   width: 5px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
-.icons img {
+.box .icons img {
   width: 60px;
   height: 60px;
   margin-left: 20px;
   margin-top: 10px;
+}
+@media ( max-width: 900px) {
+  .box .icons img {
+    margin-left: 0;
+  }
 }
 .main-team-container {
   background-color: #7f5a83;
@@ -395,7 +410,7 @@ footer p {
   justify-content: center;
   align-content: flex-end;
 }
-@media (max-width: 800px) {
+@media ( max-width: 700px) {
   .team-members {
     flex-direction: column;
     min-width: 100%;
@@ -429,7 +444,7 @@ footer p {
   align-items: center;
 }
 .team button:hover {
-  background-color: magenta;
+  background-color: #FF00FF;
 }
 .team button a {
   font-size: 1.9rem;

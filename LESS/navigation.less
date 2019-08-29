@@ -1,6 +1,5 @@
 // Navigation Styles here
 
-
 .nav-container {
   margin: 0 auto;
   padding: 20px 0;
@@ -8,25 +7,26 @@
   justify-content: space-between;
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
- 
-  @media @phone {	
+
+  @media @phone, @tablet   {
     flex-direction: column;
-      align-items: center;
-      // margin-bottom: 20px;
-  
-    } //this closes header media query
+    align-items: center;
+  } //this closes header media query
+
+
 
   h1 {
     font-size: 3.5rem;
     margin-left: 65px;
-    color:white;
-    @media @phone{
+    color: white;
+    @media @phone, @tablet {
       text-align: center;
       margin: 0;
     }
+
   } // h1
 
- nav {
+  nav {
     margin-left: 62px;
     margin-right: 140px;
     margin-top: 12px;
@@ -38,22 +38,16 @@
       font-weight: bold;
       font-family: @playfair;
       &:hover {
-        color: #FF00FF;
+        color: #ff00ff;
       }
-    }// a
-    @media @phone {
-        margin: 50px 0px 0px 0px;
-        display: flex;
-      } //this closes nav media query
-
+    } // a
+    @media @phone, @tablet {
+      margin: 50px 0px 0px 0px;
+      display: flex;
+    } //this closes nav media query
 
     .first-anchor {
       margin-left: 0;
     }
- } // this closes nav
+  } // this closes nav
 } // this closes nav container
-
-
-
-
-  

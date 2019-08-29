@@ -1,11 +1,7 @@
-// Mixins in here
-
-
-
 // Parametric Mixin
 .btn(@bgcolor, @font-color, @br, @fs) {
   color: @font-color;
-  background-color:@bgcolor;
+  background-color: @bgcolor;
   border: @br;
   font-size: @fs;
   width: 310px;
@@ -13,20 +9,16 @@
   margin: 20px auto 12px;
   font-weight: bold;
   font-family: @playfair;
-  @media @phone{
+  @media @phone {
     color: @Dimgray;
     border: 3px solid white;
   }
   &:hover {
     background-color: @font-color;
-    color: #FF6347;
+    color: #ff6347;
   }
 }
 
-
-
 .big-btn {
-  .btn( transparent, white, 3px solid @Snow, 2rem);
- 
-
+  .btn(transparent, white, 3px solid @Snow, 2rem);
 }

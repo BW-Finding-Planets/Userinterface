@@ -4,6 +4,20 @@
   width: 100vw;
   align-items: center;
   background-image: url("../../images/main-img2.jpg");
+  &:before {
+    content: "";
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    @media @phone, @tablet{
+      display: none;
+    }
+  
+  }
   display: flex;
   padding: 6em 0 2em 0;
   background-attachment: fixed;
@@ -32,16 +46,15 @@
   h2 {
     font-size: 5.5rem;
     padding-bottom: 10px;
-    color: lightgray;
-    font-weight: bold;
+    color: @Snow;
+    font-weight: 700;
     margin: 0 0 25px;
-    @media @phone {
+    @media @phone, @tablet  {
       text-align: center;
       margin-top: 60px;
     } //this closes the h2 media query
-    p{
+    p {
       text-align: center;
-      
     }
   } //h2
 
@@ -51,21 +64,19 @@
     text-align: center;
     width: 90%;
     a {
-      text-decoration-color:@Dimgray;
-      color: white ;
+      text-decoration-color: @Dimgray;
+      color: white;
     }
   }
 
-
-  
-  .box1 {
-    @media @phone {
-      #custom {
-        border: 2px solid grey;
-      }
-    } // this closes box1
-  }
-} // This closes the box section
+//   .box1 {
+//     @media @phone {
+//       #custom {
+//         border: 2px solid grey;
+//       }
+//     } // this closes box1
+//   }
+// } // This closes the box section
 
 #box2 {
   @media @phone {
@@ -98,9 +109,13 @@
   }
 } // This closes the divider
 
-.icons img{
+.icons img {
   width: 60px;
   height: 60px;
   margin-left: 20px;
   margin-top: 10px;
+  @media @tablet{
+    margin-left: 0;
+  }
+}
 }

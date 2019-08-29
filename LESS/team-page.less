@@ -32,7 +32,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: flex-end;
-  @media (max-width: 800px) {
+  @media @phone {
     flex-direction: column;
     min-width: 100%;
     align-content: center;
@@ -40,7 +40,6 @@
 }
 
 .team {
-  // background-color: magenta;
   max-width: 25%;
   min-width: 25%;
   display: flex;
@@ -65,15 +64,14 @@
     display: flex;
     align-items: center;
     &:hover {
-        background-color: magenta;
-       
-      }
+      background-color: @magenta;
+    }
     a {
       font-size: 1.9rem;
       text-decoration: none;
       color: @Darknavy;
       &:hover {
-          color: white;
+        color: white;
       }
     }
 
