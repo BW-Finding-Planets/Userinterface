@@ -153,6 +153,9 @@ table {
 html {
   font-size: 62.5%;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -284,21 +287,6 @@ footer p {
   cursor: default;
   flex-direction: row;
 }
-.home-container:before {
-  content: "";
-  position: absolute;
-  top: 78px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-@media ( max-width: 700px), ( max-width: 900px) {
-  .home-container:before {
-    display: none;
-  }
-}
 @media ( max-width: 700px) {
   .home-container {
     flex-direction: column;
@@ -327,7 +315,7 @@ footer p {
     margin-top: 60px;
   }
 }
-.box h2 p {
+.box p {
   text-align: center;
 }
 .box .text-content {
@@ -337,15 +325,20 @@ footer p {
   width: 90%;
 }
 .box .text-content a {
-  text-decoration-color: #696969;
+  text-decoration-color: white;
   color: white;
 }
 @media ( max-width: 700px) {
-  .box #box2 {
+  .box .box1 #custom {
+    border: 2px solid grey;
+  }
+}
+@media ( max-width: 700px) {
+  #box2 {
     display: none;
   }
 }
-.box .divider {
+.divider {
   min-height: 100%;
   flex-direction: column;
   display: flex;
@@ -354,28 +347,28 @@ footer p {
   align-items: center;
 }
 @media ( max-width: 700px) {
-  .box .divider {
+  .divider {
     display: none;
   }
 }
-.box .divider img {
+.divider img {
   margin-top: 5vh;
 }
-.box .divider .line {
+.divider .line {
   flex-grow: 1;
   background-color: #fdfdfd;
   width: 5px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
-.box .icons img {
+.icons img {
   width: 60px;
   height: 60px;
   margin-left: 20px;
   margin-top: 10px;
 }
 @media ( max-width: 900px) {
-  .box .icons img {
+  .icons img {
     margin-left: 0;
   }
 }
