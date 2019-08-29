@@ -60,14 +60,21 @@
     height: 150px;
   }
   button {
-    background-color: transparent;
+    background-color: lightgrey;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        background-color: magenta;
+       
+      }
     a {
       font-size: 1.9rem;
       text-decoration: none;
-      color: lightgrey;
-      margin-right: 20px;
-      margin-left: 10px;
-      margin-bottom: 10;
+      color: @Darknavy;
+      &:hover {
+          color: white;
+      }
     }
 
     img {

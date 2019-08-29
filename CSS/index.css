@@ -1,7 +1,7 @@
 .big-btn {
   color: white;
   background-color: transparent;
-  border: 2px solid #FF7F50;
+  border: 3px solid #FFFAFA;
   font-size: 2rem;
   width: 310px;
   height: 65px;
@@ -17,7 +17,7 @@
 }
 .big-btn:hover {
   background-color: white;
-  color: #FF7F50;
+  color: #FF6347;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -168,8 +168,8 @@ h4 {
   padding-bottom: 10px;
 }
 p {
-  line-height: 1.5;
-  font-size: 1.6rem;
+  line-height: 1.3;
+  font-size: 1.8rem;
   padding-bottom: 10px;
 }
 img {
@@ -220,6 +220,9 @@ img {
   font-weight: bold;
   font-family: 'Playfair Display', serif;
 }
+.nav-container nav a:hover {
+  color: #FF00FF;
+}
 @media ( max-width: 800px) {
   .nav-container nav {
     margin: 50px 0px 0px 0px;
@@ -259,6 +262,7 @@ footer p {
 }
 .footer-icons #icons-img {
   display: flex;
+  justify-content: center;
 }
 .footer-icons #icons-img img {
   width: 50px;
@@ -292,6 +296,8 @@ footer p {
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .box h2 {
   font-size: 5.5rem;
@@ -306,9 +312,18 @@ footer p {
     margin-top: 60px;
   }
 }
+.box h2 p {
+  text-align: center;
+}
 .box .text-content {
   color: white;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+  width: 90%;
+}
+.box .text-content a {
+  text-decoration-color: #696969;
+  color: white ;
 }
 @media ( max-width: 800px) {
   .box .box1 #custom {
@@ -408,15 +423,21 @@ footer p {
   height: 150px;
 }
 .team button {
-  background-color: transparent;
+  background-color: lightgrey;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+.team button:hover {
+  background-color: magenta;
 }
 .team button a {
   font-size: 1.9rem;
   text-decoration: none;
-  color: lightgrey;
-  margin-right: 20px;
-  margin-left: 10px;
-  margin-bottom: 10;
+  color: #191970;
+}
+.team button a:hover {
+  color: white;
 }
 .team button img {
   width: 35px;
